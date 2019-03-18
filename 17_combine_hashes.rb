@@ -24,7 +24,13 @@
 # Test your solution with ruby tests/17_combine_hashes.rb
 
 def combine_hashes(hash1, hash2)
-  hash3 = {}
+  hash3 = {}.merge(hash1)
+
+  hash2.each do |key, value|
+    if hash3[key]
+      hash3[key] = hash3[key] + value
+    end
+  end
 
   # Your code here
 
