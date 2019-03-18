@@ -11,25 +11,34 @@
 def contains?(arr,val)
     # Initialise the index
     ind=0
+    found = false
     # while we haven't found the value and we 
     # still have values to check
-    while !found and ind < arr.length do
+    while !found and ind <= arr.length do
         if (arr[ind] == val)
-            found=true
-        else
-            return false
+            found = true
+        # else
+        #     return false
         end
         # increment the index
-        ind +1
+        ind += 1
     end
     #return true or false, depending on if the value was found
     return found
 end
 
+def assert(expected, value)
+  if expected != value
+    puts "Error: Expected #{expected} but got #{value}"
+  else
+    puts "Passed: #{expected} == #{value}"
+  end
+end
+
 arr=[1,2,3]
 #test when val is the first element
-puts contains?(arr,1)
+assert true, contains?(arr,1)
 #test when val is not the first element
-puts contains?(arr,2)
+assert true, contains?(arr,2)
 #test when val isn't in the arr
-puts contains?(arr,0)
+assert false, contains?(arr,0)
