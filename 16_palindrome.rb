@@ -20,5 +20,5 @@
 # ruby tests/16_palindrome_test.rb
 
 def palindrome (string)
-  # Your code here
+  string == string.reverse
 end
