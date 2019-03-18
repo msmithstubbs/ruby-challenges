@@ -20,3 +20,15 @@
 * 02_input_output
 * 03_largest_number
 * 04_sum_numbers
+* 05_in_array
+* 06_definition
+* 07_included_once
+* 08_count_letters
+* 09_vowels
+* 10_unique
+* 11_fizzbuzz
+* 12_count_words
+* 13_fibonacci
+* 14_hackerman
+* 15_change_letters
+* 16_palindrome
